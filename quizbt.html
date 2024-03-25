@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Quiz-pro</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <style>
+        body {
+            padding: 20px;
+        
+        }
+        .question {
+            margin-bottom: 20px;
+            display: none;
+        }
+        #next,#submit,#clear{
+            display: none;  
+        }
+        
+       
+    </style>
+</head>
+<body>
+    <div class="container">
+        <span class="d-flex justify-content-center">
+            <button id="start" class="btn btn-primary">Start Test</button>
+        </span>
+        
+        <div id="interface">
+            <div class="question">
+                <p>Who is the founder of Apple?</p>
+                <div class="form-check">
+                    <input class="form-check-input" type="radio" name="quiz" id="ques1.1" value="false">
+                    <label class="form-check-label" for="ques1.1">Sundar</label><br>
+                    <input class="form-check-input" type="radio" name="quiz" id="ques1.2" value="false">
+                    <label class="form-check-label"  for="ques1.2">billgates</label><br> 
+                    <input class="form-check-input" type="radio" name="quiz" id="ques1.3" value="false">
+                    <label  class="form-check-label" for="ques1.3">jefbezzos</label><br> 
+                    <input class="form-check-input" type="radio" name="quiz" id="ques1.4" value="true">
+                    <label  class="form-check-label" for="ques1.4">steve jobs</label><br> 
+                </div>
+            
+            </div>
+            <div class="question">
+                <p>Who is the founder of microsoft?</p>
+                <div class="form-check">
+                    <input class="form-check-input" type="radio" name="quiz" id="ques2.1" value="false">
+                    <label class="form-check-label" for="ques2.1">Sundar</label><br>
+                    <input class="form-check-input" type="radio" name="quiz" id="ques2.2" value="true">
+                    <label class="form-check-label"  for="ques2.2">billgates</label><br> 
+                    <input class="form-check-input" type="radio" name="quiz" id="ques2.3" value="false">
+                    <label  class="form-check-label" for="ques2.3">jefbezzos</label><br> 
+                    <input class="form-check-input" type="radio" name="quiz" id="ques2.4" value="false">
+                    <label  class="form-check-label" for="ques2.4">steve jobs</label><br> 
+                </div>
+            
+            </div>
+            <div class="question">
+                <p>Who is the ceo of google?</p>
+                <div class="form-check">
+                    <input class="form-check-input" type="radio" name="quiz" id="ques3.1" value="true">
+                    <label class="form-check-label" for="ques3.1">Sundar</label><br>
+                    <input class="form-check-input" type="radio" name="quiz" id="ques3.2" value="false">
+                    <label class="form-check-label"  for="ques3.2">billgates</label><br> 
+                    <input class="form-check-input" type="radio" name="quiz" id="ques3.3" value="false">
+                    <label  class="form-check-label" for="ques3.3">jefbezzos</label><br> 
+                    <input class="form-check-input" type="radio" name="quiz" id="ques3.4" value="false">
+                    <label  class="form-check-label" for="ques3.4">steve jobs</label><br> 
+                </div>
+            
+            </div>
+
+            <div class="question">
+                <p>Who is the prime minister of india?</p>
+                <div class="form-check">
+                    <input class="form-check-input" type="radio" name="quiz" id="ques4.1" value="false">
+                    <label class="form-check-label" for="ques4.1">trump</label><br>
+                    <input class="form-check-input" type="radio" name="quiz" id="ques4.2" value="false">
+                    <label class="form-check-label"  for="ques4.2">rahul gandhi</label><br> 
+                    <input class="form-check-input" type="radio" name="quiz" id="ques4.3" value="true">
+                    <label  class="form-check-label" for="ques4.3">Modi</label><br> 
+                    <input class="form-check-input" type="radio" name="quiz" id="ques4.4" value="false">
+                    <label  class="form-check-label" for="ques4.4">putin</label><br> 
+                </div>
+            
+            </div>
+            <div class="question">
+                <p>Who is the pm of russia?</p>
+                <div class="form-check">
+                    <input class="form-check-input" type="radio" name="quiz" id="ques5.1" value="true">
+                    <label class="form-check-label" for="ques5.1">putin</label><br>
+                    <input class="form-check-input" type="radio" name="quiz" id="ques5.2" value="false">
+                    <label class="form-check-label"  for="ques5.2">sardhar</label><br> 
+                    <input class="form-check-input" type="radio" name="quiz" id="ques5.3" value="false">
+                    <label  class="form-check-label" for="ques5.3">stalin</label><br> 
+                    <input class="form-check-input" type="radio" name="quiz" id="ques5.4" value="false">
+                    <label  class="form-check-label" for="ques5.4">modi</label><br> 
+                </div>
+            
+            </div>
+            <!-- Add other questions similarly by changing id numbers then value to true Or false-->
+            <span class="d-flex">
+                <button id="clear" class="btn btn-secondary mx-2">Clear</button>
+            <button id="next" class="btn btn-primary">Next</button> 
+            </span>
+            
+
+            <span class="d-flex justify-content-center">
+            <button id="submit" class="btn btn-success">Submit</button>
+            <div id="total"></div>
+            </span>
+        </div>
+    </div>
+    <script src="quiz.js"></script>
+</body>
+</html>
